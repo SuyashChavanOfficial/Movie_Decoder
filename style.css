@@ -8,9 +8,20 @@ body {
 
 .top {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2; /* Make sure the logo and button appear above the carousel */
+    z-index: 2;
+    display: flex;
+    justify-content: space-around; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.top-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navbar {
+    flex-grow: 10; /* Allow the navbar to grow and take up remaining space */
 }
 
 .top-logo-img {
