@@ -1,6 +1,6 @@
 
 body {
-    background-color: #121212;
+    background-color: #0d0d0d;
     color: #FFFFFF;
 }
 
@@ -38,12 +38,62 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-    z-index: 1;
+    z-index: 2;
 }
 
 .carousel-item img {
     width: 100%;
     height: 75vh;
     object-fit: cover;
-    z-index: 2;
+    z-index: 1;
+}
+
+/* MOVIE SEARCH  */
+
+.movie-search {
+    justify-content: center;
+    align-items: center;  
+    display: flex; 
+    flex-direction: column;
+    background-color: rgb(21, 21, 21);
+    padding: 10px;
+}
+
+.movie-search h2 {
+    margin: 25px;
+}
+
+/* CATEGORY 1  */
+
+.genre {
+    padding: 10px;
+}
+
+.movie-cat {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 240px;
+}
+
+.movie-cat::-webkit-scrollbar {
+    width: 0;
+}
+
+.movie-cat-item {
+    width: 300px;
+    height: 169px;
+    margin-right: 20px;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-cat-item:hover {
+    transform: scale(1.1);
+}
+
+.movie-cat-img {
+    width: 100%;
+    height: 100%;
 }
